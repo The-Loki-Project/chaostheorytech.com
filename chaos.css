@@ -1,0 +1,179 @@
+/* Reset some default styles to ensure consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Logo Styles */
+.logo {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: auto; /* Pushes the logo to the left */
+    margin-left: 70%; /* Adds some spacing on the left side */
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    width: 150px; /* Adjust the logo width as needed */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Search Bar Styles */
+input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Hero Section Styles */
+#hero {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Content Section Styles */
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.featured-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.featured-articles img {
+    max-width: 100%;
+    height: auto;
+}
+
+.featured-articles h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.category-sections {
+    margin-top: 30px;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.category h2 {
+    font-size: 24px;
+}
+
+.category article {
+    margin-top: 20px;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.author-info img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.popular-posts ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.popular-posts li {
+    margin-bottom: 10px;
+}
+
+.tags, .archive {
+    margin-top: 20px;
+}
+
+.tags a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Adjustments for smaller screens (responsive design) */
+@media screen and (max-width: 768px) {
+    header img {
+        width: 100px; /* Adjust the logo width for smaller screens */
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Add more responsive styles as needed */
+}
+
