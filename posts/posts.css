@@ -1,3 +1,11 @@
+/* **************************************************** */
+/* *************** CSS By Jacob Swanson *************** */
+/* *************** Updated Sept 11th 23 *************** */
+/* **************************************************** */
+
+
+/* *************** Page Wide Section *************** */
+
 /* Reset some default styles to ensure consistency */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -10,39 +18,82 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Logo Styles */
-.logo {
-    width: 200px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: auto; /* Pushes the logo to the left */
-    margin-left: 70%; /* Adds some spacing on the left side */
-}
+/* *************** Header Section *************** */
 
 /* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333; /* You can change the background color as needed */
+    color: #fff; /* You can change the text color as needed */
+}
+
+.logo {
+    flex: 1;
+    max-width: 150px; /* Set the maximum width as needed */
+    max-height: 150px; /* Set the maximum width as needed */
+}
+
+.site-header {
+    flex: 1;
     text-align: center;
-    padding: 20px 0;
+    color: #fff; /* Change link text color as needed */
+    text-decoration: none;
+    font-size: 32px; /* Adjust the link text size as needed */
 }
 
-header img {
-    width: 150px; /* Adjust the logo width as needed */
+.site-header a {
+    flex: 1;
+    text-align: center;
+    color: #fff; /* Change link text color as needed */
+    text-decoration: none;
+    font-size: 32px; /* Adjust the link text size as needed */
 }
 
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+.search-bar {
+    flex: 1;
+    text-align: right;
+}
+
+/* Style the navigation links and input field as needed */
 nav ul {
     list-style: none;
+    padding: 0;
 }
 
-nav ul li {
+nav li {
     display: inline;
     margin-right: 20px;
 }
 
+/* Adjust link aesthetics (e.g., color, size, and hover effects) */
 nav a {
+    color: #fff; /* Change link text color as needed */
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+    font-size: 32px; /* Adjust the link text size as needed */
+    /* Add additional styling for links as needed */
+}
+
+/* Style the search input field */
+input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* Add any additional styling for the input field as needed */
+}
+
+/* Adjust the text size within the header */
+header h1 {
+    font-size: 24px; /* Adjust the header text size as needed */
 }
 
 /* Search Bar Styles */
@@ -53,6 +104,7 @@ input[type="text"] {
     border-radius: 5px;
     margin-top: 10px;
 }
+
 
 /* Hero Section Styles */
 #hero {

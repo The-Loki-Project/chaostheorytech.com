@@ -3,111 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chaostheorytech - Home</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="chaos.css">
 </head>
+
+<!-- *************** Header Starts Here *************** -->
+
 <body>
     <header>
-        <!-- Logo goes here -->
-	<!-- <img class="logo" src="images/Logo.png" alt="Swanson-IT Logo"> -->
-	<h1><a href="index.html">chaostheorytech.com </h1>
-         <br>
-	 <br>
-	<nav>
+
+    <!-- *************** Logo Starts Here *************** -->
+
+        <div class="logo">
+            <!-- Logo goes here -->
+            <img class="logo" src="images/Logo.png" alt="Swanson-IT Logo">
+        </div>
+
+    <!-- *************** site-header Starts Here *************** -->
+
+        <div class="site-header">
+            <h1><a href="index.html">chaostheorytech.com</a></h1>
+        </div>
+
+    <!-- *************** Navigation Starts Here *************** -->
+
+        <nav>
             <!-- Navigation menu goes here -->
             <ul>
                 <li><a href="posts.html">Posts</a></li>
+                <li><a href="certs.html">Certifications</a></li>
                 <li><a href="tools.html">Tools</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
 
-        <!-- Search bar goes here -->
-        <input type="text" placeholder="Search">
+
+    <!-- *************** search-bar Starts Here *************** -->
+
+        <div class="search-bar">
+            <!-- Search bar goes here -->
+            <input type="text" placeholder="Search">
+        </div>
     </header>
 
-    <section id="hero">
-        <!-- Banner image goes here -->
-        <img src="banner-image.jpg" alt="System Admin Banner">
+<!-- *************** Body Starts Here *************** -->
+
+    <!-- *************** left-sidebar Starts Here *************** -->
+
+    <div class="container">
+        <aside id="left-sidebar">
+            <div class="author-info">
+                <!-- Insert author's photo here 
+                <img src="author-photo.jpg" alt="Author Photo">
+                <h3>Author Name</h3>
+                <p>System Administrator</p> -->
+            </div>
+
+            <!-- Social media links go here -->
+            <div class="social-media">
+                <!-- Insert social media icons and links here -->
+            </div>
+
+            <!-- Popular posts go here -->
+            <div class="popular-posts">
+                <h3></h3>
+                <!-- List popular posts here 
+                <ul>
+                    <li><a href="posts/docker_with_haproxy.html">Using Docker with HAProxy and Apache <br></a></li>
+                    <li><a href="posts/hosting_nagios_in_docker.html">Hosting_Nagios_in_Docker <br></a></li>
+                     Add more popular posts -->
+                </ul>
+            </div>
+
+            <!-- Tags or topics go here -->
+            <div class="tags">
+                <h3></h3>
+                <!-- Insert tag cloud or topic list here -->
+            </div>
+
+            <!-- Archive section goes here -->
+            <div class="archive">
+                <h3></h3>
+                <!-- Insert archive list here -->
+            </div>
+        </aside>
+
+    <!-- *************** Main Content Starts Here *************** -->
+
+        <section id="content">
+
+    <!-- *************** Category 1 Starts Here *************** -->
+    
+            <div class="category-sections">
+
+                <section class="category">
+
+                    <h2>Homelab with Docker Series</h2>
+
+        <!-- *************** Article 1 - Category 1 Starts Here *************** -->
+
+                    <article>
+                        <!--  <img src="linux-article-image.jpg" alt="Linux Admin Article Image"> -->
+                        <h3><a href="posts/docker_with_haproxy.html">Running Apache and HAProxy as Docker containers</a></h3>
+                        <p>How to build and configure this website (Or your own) using only a linux server and Docker. (Code Examples and Github included).</p>
+                    </article>
+                
+        <!-- *************** Article 2 - Category 1 Starts Here *************** -->
+
+                    <article>
+                        <!--  <img src="linux-article-image.jpg" alt="Linux Admin Article Image"> -->
+                        <h3><a href="posts/hosting_nagios_in_docker">Running Nagios in Docker containers</a></h3>
+                        <p>How to host Nagios side by side other applications and manage access to it with HAProxy (Code Examples and Github included).</p>
+                    </article>
+
+                </section>
+
+            </div>
+
+    <!-- *************** Category 2 Starts Here *************** -->
+
+            <div class="category-sections">
+                
+                <section class="category">
         
-        <!-- Catchy tagline goes here -->
-        <h1>Welcome to Your System Administration Blog</h1>
-        <p>Created to keep track of my own projects, and hopefully to help others</p>
-    </section>
+                    <h2>What I used to study for ...</h2>
 
-    <section id="content">
-        <div class="featured-articles">
-            <!-- Featured articles grid goes here -->
-            <!-- Replace the comments with actual article content -->
-            <article>
-                <img src="article1-image.jpg" alt="Docker Logo">
-                <h2>Running Apache and HAProxy as containers</h2>
-                <p>This article runs down how I built and configured this website, with the code examples (and github repo) to make your own.</p>
-            </article>
-            <!-- Repeat for other featured articles -->
-        </div>
+        <!-- *************** Article 1 - Category 2 Starts Here *************** -->
 
-        <div class="category-sections">
-            <!-- Category sections go here -->
-            <!-- Replace the comments with actual category content -->
-            <section class="category">
-                <h2>What I used to study for ...</h2>
-                <article>
-		<!--  <img src="linux-article-image.jpg" alt="Linux Admin Article Image"> -->
-                    <h3>Network+ Study Guide</h3>
-                    <p>These are the resources I used to pass the Network+ and how it's helped me in my career.</p>
-                </article>
-                <!-- Repeat for other articles in this category -->
-            </section>
-            <!-- Repeat for other categories -->
-        </div>
-        
-        <!-- Newsletter signup form goes here
-            <div class="newsletter-signup">
-                <h2>Stay Updated</h2>
-                <p>Subscribe to our newsletter for the latest articles and news.</p>
-         Insert your newsletter form code here -->
-        </div>
-    </section>
+                    <article>
+                        <!--  <img src="linux-article-image.jpg" alt="Linux Admin Article Image"> -->
+                        <h3><a href="certs/network+.html">Network+ Study Guide</a></h3>
+                        <p>These are the resources I used to pass the Network+ and how it's helped me in my career.</p>
+                    </article>
+                    
+        <!-- *************** Article 2 - Category 2 Starts Here *************** -->
 
-    <aside id="sidebar">
-        <!-- Sidebar content goes here -->
-        <!-- Author information goes here -->
-        <div class="author-info">
-            <!-- Insert author's photo here -->
-            <img src="author-photo.jpg" alt="Author Photo">
-            <h3>Author Name</h3>
-            <p>System Administrator</p>
-        </div>
+                    <article>   
+                        <!--  <img src="linux-article-image.jpg" alt="Linux Admin Article Image"> -->
+                        <h3><a href="certs/security+.html">Security+ Study Guide</a></h3>
+                        <p>These are the resources I used to pass the Security+ and how it's helped me in my career.</p>
+                    </article>
 
-        <!-- Social media links go here -->
-        <div class="social-media">
-            <!-- Insert social media icons and links here -->
-        </div>
+        <!-- *************** Article 3 - Category 2 Starts Here *************** -->
 
-        <!-- Popular posts go here -->
-        <div class="popular-posts">
-            <h3>Popular Posts</h3>
-            <!-- List popular posts here -->
-            <ul>
-                <li><a href="posts/docker_with_haproxy.html">Using Docker with HAProxy and Apache <br></a></li>
-                <li><a href="posts/hosting_nagios_in_docker.html">Hosting_Nagios_in_Docker <br></a></li>
-                <!-- Add more popular posts -->
-            </ul>
-        </div>
+                    <article>   
+                        <!--  <img src="linux-article-image.jpg" alt="Linux Admin Article Image"> -->
+                        <h3><a href="certs/linux+.html">Linux+ Study Guide</a></h3>
+                        <p>These are the resources I used to pass the Linux+ and how it's helped me in my career.</p>
+                    </article>
 
-        <!-- Tags or topics go here -->
-        <div class="tags">
-            <h3>Tags</h3>
-            <!-- Insert tag cloud or topic list here -->
-        </div>
+                </section>
 
-        <!-- Archive section goes here -->
-        <div class="archive">
-            <h3>Archive</h3>
-            <!-- Insert archive list here -->
-        </div>
-    </aside>
+            </div>
+
+    <!-- *************** Right Sidebar Starts Here *************** -->
+
+        <aside id="right-sidebar">
+            <!-- This is an empty sidebar on the right -->
+        </aside>
+    </div>
+
+<!-- *************** Footer Starts Here *************** -->
 
     <footer>
         <!-- Contact information goes here -->
@@ -121,4 +177,3 @@
     <!-- Insert your JavaScript scripts or links here -->
 </body>
 </html>
-
