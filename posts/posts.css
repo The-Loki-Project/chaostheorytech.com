@@ -105,7 +105,6 @@ input[type="text"] {
     margin-top: 10px;
 }
 
-/* *************** Body Section *************** */
 
 /* Hero Section Styles */
 #hero {
@@ -129,74 +128,39 @@ input[type="text"] {
 }
 
 /* Content Section Styles */
-
 #content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding a subtle box shadow */
 }
 
-/* Category Section Styles */
-.category-sections {
-    margin-top: 30px;
-}
-
-.category a {
-    text-align: center;
-    color: #333; /* Change link text color as needed */
-    text-decoration: none;
-    font-size: 18px; /* Adjust the link text size as needed */
-}
-
-.category {
-    margin-bottom: 40px;
+/* Featured Posts Styles */
+.post {
+    border: 1px solid #ccc;
     padding: 20px;
-    border: 1px solid #e0e0e0; /* Adding a border around each category */
-    border-radius: 10px; /* Rounded corners for categories */
+    margin-bottom: 20px;
 }
 
-.category h2 {
+.post img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post h2 {
     font-size: 24px;
-    color: #333; /* Darkening the text color */
-    margin-bottom: 10px; /* Slightly more space below headings */
+    margin: 10px 0;
 }
 
-.category article {
-    margin-top: 20px;
+.post p {
+    font-size: 16px;
+    color: #555;
 }
-
-/* *************** Content Spacing *************** */
-
-/* Define container styles for the three columns */
-.container {
-    display: flex;
-}
-
-/* Sidebar styles */
-#left-sidebar {
-    flex: 1;
-    max-width: 25px; /* Set your desired max-width */
-}
-
-/* Content styles */
-#content {
-    flex: 4;
-}
-
-/* Empty sidebar styles */
-#right-sidebar {
-    flex: 1;
-    max-width: 25px; /* Set your desired max-width */
-}
-
-/* *************** Left-Sidebar customization *************** */
 
 /* Sidebar Styles */
-#left-sidebar {
+#sidebar {
     background-color: #f4f4f4;
-    padding: 0px;
+    padding: 20px;
 }
 
 .author-info img {
@@ -233,16 +197,6 @@ input[type="text"] {
     margin-right: 10px;
 }
 
-/* *************** Right-Sidebar customization *************** */
-
-/* Sidebar Styles */
-#right-sidebar {
-    background-color: #f4f4f4;
-    padding: 0px;
-}
-
-/* *************** Footer Section *************** */
-
 /* Footer Styles */
 footer {
     background-color: #333;
@@ -250,14 +204,6 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
-
-.footer::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* *************** Mobile Optimization Section *************** */
 
 /* Adjustments for smaller screens (responsive design) */
 @media screen and (max-width: 768px) {
@@ -272,4 +218,3 @@ footer {
 
     /* Add more responsive styles as needed */
 }
-
